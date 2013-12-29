@@ -1,0 +1,223 @@
+/* Esse CSS foi feito pelo Sergio Mainetti Jr. */
+/* Data: 27/12/2013 */
+
+
+/* ====== GERAL ======*/
+
+/* Aqui vão as definições gerais, que são usadas em todas as partes do site estilo CrowdfundHQ */
+
+/* Aqui muda a cor dos textos que têm links para o rosa */
+a {
+color: #D94A7F;
+}
+
+/* Aqui é para definir a cor e o sublinhado quando passa o mouse em links */
+a:hover {
+color: #CC0000;
+text-decoration: underline;
+}
+
+/* Aqui é para definir a cor rosa do tom do CaridadX */
+.pinkcaridadx {
+color: #D94A7F;
+}
+
+/* Aqui é para definir a cor e o sublinhado quando passa o mouse no tom pinkcaridadx */
+a:hover .pinkcaridadx {
+color: #CC0000;
+text-decoration: underline;
+}
+
+/* Aqui é para definir uma cor rosa mais forte como alternativa */
+.pinkcaridadx_forte {
+color: #CC0066;
+}
+
+/* Aqui é para mudar as cores dos botões */
+.btn {
+background: #D94A7F;
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#D94A7F),to(#CC0066));
+background-image: -webkit-linear-gradient(top,#D94A7F,#CC0066);
+background-image: -o-linear-gradient(top,#D94A7F,#CC0066);
+background-image: linear-gradient(to bottom,#D94A7F,#CC0066);
+background-image: -moz-linear-gradient(top,#D94A7F,#CC0066);
+}
+
+/* Aqui é para sublinhar os botões quando passa o mouse */
+.btn:hover {
+text-decoration: underline;
+}
+
+/* Aqui é para mudar as cores dos botões quando clicados (ativos) */
+.btn:active,
+.btn.active {
+background: #4bb0f6;
+}
+
+/* Aqui é para mudar as cores dos botões primários */
+.btn-primary {
+background: #D94A7F;
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#D94A7F),to(#CC0066));
+background-image: -webkit-linear-gradient(top,#D94A7F,#CC0066);
+background-image: -o-linear-gradient(top,#D94A7F,#CC0066);
+background-image: linear-gradient(to bottom,#D94A7F,#CC0066);
+background-image: -moz-linear-gradient(top,#D94A7F,#CC0066);
+}
+
+/* Aqui é para mudar as cores dos botões primários quando clicados (ativos) */
+.btn-primary:active,
+.btn-primary.active {
+background: #4bb0f6;
+}
+
+
+/* ====== HEADER ======*/
+
+/* Aqui é para alinhar o logo de forma melhor */
+#top .logo {
+margin: 7px 30px 6px 0;
+}
+
+#top {
+border-color: #FFFFFF; /* borda branca (transparente) */
+}
+
+/* Aqui é tirar o caracter de 'coração' de cima do 'Explorar' */
+#top nav  li.main-link a:before {
+content: "";
+}
+
+/* Aqui é tirar o caracter de 'estrela' de cima do 'Criar' */
+#top nav li.main-link.new-campaign a:before {
+content: "";
+}
+
+/* Aqui é para dar um pouco mais de espaço entre as opções do menu */
+#top nav li.main-link {
+padding-right: 12px;
+}
+
+/* Aqui é para tentar fazer os textos do header ficarem mais centralizados e a fonte 1 pixel maior */
+#top .tall {
+font-size: 15px;
+line-height: 43px;
+}
+
+/* Aqui é para tentar fazer o Login mais centralizado, a fonte bold com 1 pixel maior e a cor diferente */
+#top nav ul li a {
+color: #CC0066;
+/* Tirei a fonte Bold, achei que sem bold ficou mais leve */
+/* font-weight: bold; */
+font-size: 15px;
+line-height: 41px;
+}
+
+
+/* ====== TAGLINE ======*/
+
+/* Aqui é para aumentar o tamanho da segunda parte do site, que é chamada de tagline
+   e também colocar uma foto de fundo */
+#tagline {
+background: url(http://files.crowdfundhq.com/1387668339_caridadx-homepage.jpg) #FFFFFF;
+background-repeat:no-repeat; /* não repete a imagem de background */
+background-position:center; /* centraliza a imagem de fundo */
+border-color: #FFFFFF; /* borda branca (transparente) */
+padding: 10px 0 165px 0;
+margin-bottom: 0px;
+text-align: left;
+
+}
+
+/* Aqui é para mudar o layout do escrito no tagline, tanto H1 quanto H2 */
+#tagline h1, #tagline h2 {
+padding: 0 0 0 5px;
+font-size: 24px;
+font-weight: lighter;
+color: #FFFFFF;
+text-shadow:1px 1px 0px #333333;
+}
+
+/* Aqui é para colocar o H2 (Palavra Beta e Subtítulos) na esquerda e itálico */
+#tagline h2 {
+padding: 7px 0 0 5px;
+font-size: 16px;
+font-style:italic;
+}
+
+/* Aqui é para mudar a cor do link da pessoa que criou a causa no Tagline */
+#tagline h2 a {
+color: #E6E6E6;
+}
+
+/* Aqui é para mudar a cor do link da pessoa que criou a causa no Tagline, quando passa o mouse */
+#tagline h2 a:hover {
+color: #E6E6E6;
+text-decoration: underline;
+}
+
+/* ====== CONTENT - CORPO CENTRAL DO SITE ======*/
+
+/* Aqui é a cor do título (chamada) da campanha quando passar o mouse por cima */
+#content .campaign_badge a:hover h1, #content .campaign_badge h1 a:hover {
+color: #CC0000;
+text-decoration: underline;
+}
+
+/* Aqui é para deixar a cor rosa quando passa o mouse (hover) no tab de seleção */
+/* Não consegui mudar a cor quando clica, coloquei em comentários
+#content ul#ctabs.nav.nav-tabs li a.category-tab:hover {
+color: #D94A7F;
+}
+*/
+
+/* Aqui é para deixar a cor rosa quando passa o mouse (hover) no Causas em Geral */
+/* Não consegui mudar a cor quando clica, coloquei em comentários
+#content ul#ctabs.nav.nav-tabs li a:hover {
+color: #BB2E63;
+}
+*/
+
+/* Aqui é para mudar a cor dos títulos das campanhas para rosa */
+#content .campaign_badge a h1, #content .campaign_badge h1 a {
+/* color: #BB2E63; */
+color: #CC0066;
+text-shadow: none;
+}
+
+#content .titulo-principal {
+font-size: 26px;
+font-weight: bold;
+text-align:center;
+}
+
+#content .titulo-secundario {
+font-size: 20px;
+text-align: center;
+}
+
+#content .item {
+text-indent: 0;
+}
+
+#content p {
+/* border: 1px solid black; */
+font-size: 16px;
+text-indent: 28px;
+padding: 0 0 0 0;
+text-align: justify;
+}
+
+
+/* ====== FOOTER ======*/
+
+/* Aqui muda a cor de fundo do Footer */
+#footer {
+background: #FFFFFF;
+padding: 0 0 10px 0;
+border-color: #FFFFFF; /* borda branca (transparente) */
+}
+
+/* Para alinhar o último item à direita */
+#footer .right {
+float: right;
+}
